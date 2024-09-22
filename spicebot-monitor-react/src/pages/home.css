@@ -1,0 +1,175 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.yeah {
+  width: 100%;
+  height: 48.5pc;
+  background-color: #ffffff;
+}
+
+.top-text {
+  padding: 0px 20px;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  margin-bottom: 10px;
+  padding: 10px 29px;
+  margin-top: -130px;
+  position: relative;
+  margin-bottom: 0;
+}
+
+.box {
+  background-color: #ffab40;
+  padding: 20px;
+  border-radius: 0px 0px 50px 0px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.box h2 {
+  margin: 0;
+  margin-top: 0;
+  text-align: start;
+  margin-left: 20px;
+  padding: 10px 0px;
+}
+
+.button {
+  display: flex;
+  background-color: #ffab40;
+  color: black;
+  padding: 10px;
+  margin: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  border: 2px solid black;
+}
+
+.button:hover {
+  background-color: #fdc882;
+}
+
+.schedules {
+  text-align: left;
+  color: black;
+}
+
+.schedules .time {
+  font-size: 2em;
+  color: #333;
+}
+
+.schedules p {
+  padding: 0px 20px;
+}
+
+.schedules hr {
+  border: 2px solid #ffd189;
+  background-color: #ffd189;
+  width: 113%;
+  margin-left: -20px;
+}
+
+.schedules-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.schedules-btn h2 {
+  margin: 0;
+}
+
+.schedules-btn a {
+  text-decoration: none;
+  color: black;
+  padding: 0px 10px;
+  margin-left: 100px;
+}
+
+.quick-access {
+  position: relative;
+  padding: 10px 50px;
+}
+
+.quick-access h3 {
+  margin: 30px 0px;
+  margin-bottom: 35px;
+}
+
+.quick-button {
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: none;
+  padding: 17px 50px;
+  text-decoration: none;
+  margin-right: 30px;
+  color: black;
+}
+
+.btn {
+  position: relative;
+}
+
+.card img {
+  width: 40px;
+  background-color: #e7e7e7;
+  padding: 0px 20px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.card button {
+  border: none;
+  background-color: #e7e7e7;
+}
+
+.sign-btn {
+  border: 2px solid #43bdee;
+  border-radius: 10px 10px 0px 0px;
+  width: 70px;
+  background-color: #43bdee;
+  height: 5px;
+  position: relative;
+  margin: 0;
+  margin-bottom: -10px;
+}
+
+.hover-btn {
+  background-color: #e7e7e7;
+  border: 2px solid #e7e7e7;
+  border-radius: 10px 10px 0px 0px;
+  width: 70px;
+  height: 5px;
+  position: relative;
+  margin: 0;
+  margin-bottom: -10px;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+
+.btn-1 a:hover + .hover-btn {
+  background-color: #43bdee;
+  border-color: #43bdee;
+  opacity: 1;
+}
+
+.btn-3 a:hover + .hover-btn {
+  background-color: #43bdee;
+  border-color: #43bdee;
+  opacity: 1;
+}
