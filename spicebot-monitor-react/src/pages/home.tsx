@@ -1,6 +1,7 @@
 import { CalendarCheck2, House, Leaf, Settings } from "lucide-react";
 import "./home.css";
 import QuickButton from "../componetns/QuickButton";
+import PrimaryCard from "../componetns/PrimaryCard";
 export default function HomePage() {
   return (
     <>
@@ -15,39 +16,42 @@ export default function HomePage() {
           </div>
         </header>
 
-        <div className="flex px-8 mt-[-115px] snap-x overflow-x-auto gap-6">
-          <div className="kalibrasi box">
-            <h2>Kalibrasi</h2>
-            <a href="kalibrasi_axis_x.html" className="button">
-              Kalibrasi Axis X
-            </a>
-            <a href="kalibrasi_axis_y.html" className="button">
-              Kalibrasi Axis Y
-            </a>
-          </div>
-          <div className="kalibrasi box">
-            <h2>Kalibrasi</h2>
-            <a href="kalibrasi_axis_x.html" className="button">
-              Kalibrasi Axis X
-            </a>
-            <a href="kalibrasi_axis_y.html" className="button">
-              Kalibrasi Axis Y
-            </a>
-          </div>
+        <div className="w-full">
+          <div className="flex px-8 mt-[-115px] snap-x overflow-x-auto gap-6">
+            <PrimaryCard title="Calibration" Icon={CalendarCheck2}>
+              <div>
+                <a href="kalibrasi_axis_x.html" className="button">
+                  Kalibrasi Axis X
+                </a>
+                <a href="kalibrasi_axis_y.html" className="button">
+                  Kalibrasi Axis Y
+                </a>
+              </div>
+            </PrimaryCard>
 
-          <div className="schedules box">
-            <div className="schedules-btn  ">
-              <CalendarCheck2 /> <h2 className="ml-10">Schedules</h2>
-              <a href="Schedules-page-SpiceBot.html">{">"}</a>
-            </div>
-            <hr />
-            <p>Hari ini, 8 Feb</p>
-            <p className="time">09:50</p>
-            <p className="description">
-              12 menit lagi
-              <br />
-              Menyiram seluruh tanaman
-            </p>
+            <PrimaryCard title="Calibration" Icon={CalendarCheck2}>
+              <div>
+                <a href="kalibrasi_axis_x.html" className="button">
+                  Calibrate X Axis
+                </a>
+                <a href="kalibrasi_axis_y.html" className="button">
+                  Calibrate Y Axis
+                </a>
+              </div>
+            </PrimaryCard>
+
+            <PrimaryCard title="Schedules" Icon={CalendarCheck2}>
+              <div>
+                <hr />
+                <p>Today, 8 February</p>
+                <p className="time">09:50</p>
+                <p className="description">
+                  12 minutes again
+                  <br />
+                  Water all of the plants
+                </p>
+              </div>
+            </PrimaryCard>
           </div>
         </div>
 
@@ -56,8 +60,6 @@ export default function HomePage() {
           <div className="w-full max-w-full overflow-auto">
             <div className="mt-2 max-w-none flex snap-x overflow-x-auto snap-mandatory gap-3 relative">
               <QuickButton>Compact Analysis</QuickButton>
-              <QuickButton>Compact Analysis</QuickButton>
-
               <QuickButton>Connected Devices</QuickButton>
               <QuickButton>Camera Streaming</QuickButton>
               <QuickButton>Sensors</QuickButton>
@@ -66,25 +68,25 @@ export default function HomePage() {
           </div>
         </div>
         <div
-          className="card flex items-center justify-evenly fixed p-3 rounded-[50px] bottom-4 left-[50%] translate-x-[-50%]"
+          className="card scale-150 flex items-center justify-evenly fixed p-3 rounded-[50px] bottom-8 left-[50%] translate-x-[-50%]"
           style={{
             backgroundColor: "#e7e7e7",
           }}
         >
-          <div className="flex flex-col justify-center items-center gap-2">
-            <Leaf />
+          <div className="flex flex-col justify-center items-center gap-2 px-1">
+            <Leaf size={30} />
 
             <hr className="hover-btn" />
           </div>
 
-          <div className="flex flex-col justify-center items-center gap-2">
-            <House />
+          <div className="flex flex-col justify-center items-center gap-2 px-1">
+            <House size={30} />
 
             <hr className="sign-btn" />
           </div>
 
-          <div className="flex flex-col justify-center items-center gap-2">
-            <Settings />
+          <div className="flex flex-col justify-center items-center gap-2 px-1">
+            <Settings size={30} />
 
             <hr className="hover-btn" />
           </div>
