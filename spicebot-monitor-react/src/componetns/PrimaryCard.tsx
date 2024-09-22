@@ -12,12 +12,11 @@ export default function PrimaryCard({
 }) {
   return (
     <div
-      className="schedules"
+      className="schedules min-w-72"
       style={{
         backgroundColor: "#ffab40",
         padding: "20px",
         borderRadius: "0px 0px 50px 0px",
-        width: "280px",
         textAlign: "center",
         boxShadow: " 0px 4px 6px rgba(0, 0, 0, 0.1)",
       }}
