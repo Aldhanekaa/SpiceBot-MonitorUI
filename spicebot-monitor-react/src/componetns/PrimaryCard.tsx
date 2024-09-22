@@ -11,7 +11,17 @@ export default function PrimaryCard({
   children: ReactElement;
 }) {
   return (
-    <div className="schedules box ">
+    <div
+      className="schedules"
+      style={{
+        backgroundColor: "#ffab40",
+        padding: "20px",
+        borderRadius: "0px 0px 50px 0px",
+        width: "280px",
+        textAlign: "center",
+        boxShadow: " 0px 4px 6px rgba(0, 0, 0, 0.1)",
+      }}
+    >
       <div className="schedules-btn  ">
         <div className="flex w-full">
           <div className="flex items-center gap-2">

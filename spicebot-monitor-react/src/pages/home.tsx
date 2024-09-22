@@ -1,4 +1,11 @@
-import { CalendarCheck2, House, Leaf, Settings } from "lucide-react";
+import {
+  CalendarCheck2,
+  House,
+  Leaf,
+  Settings,
+  Sparkles,
+  SquareChevronRight,
+} from "lucide-react";
 import "./home.css";
 import QuickButton from "../componetns/QuickButton";
 import PrimaryCard from "../componetns/PrimaryCard";
@@ -11,42 +18,37 @@ export default function HomePage() {
           <div className="px-10">
             <div className="top-text">
               <h3 className="text-xl">Welcome, User</h3>
-              <h1 className="text-3xl">Kontrol Panel Spicebot</h1>
+              <h1 className="text-3xl">Spicebot Control Panel</h1>
             </div>
           </div>
         </header>
 
         <div className="w-full">
           <div className="flex px-8 mt-[-115px] snap-x overflow-x-auto gap-6">
-            <PrimaryCard title="Calibration" Icon={CalendarCheck2}>
+            <PrimaryCard title="Actions" Icon={SquareChevronRight}>
               <div>
                 <a href="kalibrasi_axis_x.html" className="button">
-                  Kalibrasi Axis X
+                  Toggle Lights
                 </a>
                 <a href="kalibrasi_axis_y.html" className="button">
-                  Kalibrasi Axis Y
+                  Toggle Water
                 </a>
               </div>
             </PrimaryCard>
 
-            <PrimaryCard title="Calibration" Icon={CalendarCheck2}>
+            <PrimaryCard title="Calibration" Icon={Sparkles}>
               <div>
-                <a href="kalibrasi_axis_x.html" className="button">
-                  Calibrate X Axis
-                </a>
-                <a href="kalibrasi_axis_y.html" className="button">
-                  Calibrate Y Axis
-                </a>
+                <div className="button">Calibrate X Axis</div>
+                <div className="button">Calibrate Y Axis</div>
               </div>
             </PrimaryCard>
 
             <PrimaryCard title="Schedules" Icon={CalendarCheck2}>
-              <div>
-                <hr />
-                <p>Today, 8 February</p>
+              <div className="text-start mt-2">
+                <p>Today, 8th February</p>
                 <p className="time">09:50</p>
                 <p className="description">
-                  12 minutes again
+                  11 minutes again
                   <br />
                   Water all of the plants
                 </p>
@@ -55,7 +57,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className=" w-full pl-8 flex flex-col mt-6">
+        <div className=" w-full px-8 flex flex-col mt-6">
           <h3>Quick Access Menu</h3>
           <div className="w-full max-w-full overflow-auto">
             <div className="mt-2 max-w-none flex snap-x overflow-x-auto snap-mandatory gap-3 relative">
@@ -63,7 +65,6 @@ export default function HomePage() {
               <QuickButton>Connected Devices</QuickButton>
               <QuickButton>Camera Streaming</QuickButton>
               <QuickButton>Sensors</QuickButton>
-              <QuickButton>Manual Control</QuickButton>
             </div>
           </div>
         </div>
