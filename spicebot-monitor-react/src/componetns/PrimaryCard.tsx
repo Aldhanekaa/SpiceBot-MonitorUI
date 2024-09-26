@@ -6,15 +6,19 @@ export default function PrimaryCard({
   title,
   Icon,
   overlay,
+  width,
 }: {
   title: string;
   Icon: LucideIcon;
   children: ReactElement;
   overlay?: boolean;
+  width?: string;
 }) {
   return (
     <div
-      className="schedules snap-center min-w-[calc(calc(100vw/3)-38px)] overflow-hidden flex flex-col justify-between"
+      className={`schedules snap-center ${
+        width ? width : "min-w-[calc(calc(100vw/3)-38px)]"
+      }  overflow-hidden flex flex-col justify-between`}
       style={{
         backgroundColor: "#ffab40",
         borderRadius: "0px 0px 50px 0px",

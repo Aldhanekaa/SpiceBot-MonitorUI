@@ -45,22 +45,48 @@ export default function PlantsPage() {
             </PrimaryCard>
 
             <PrimaryCard overlay title="Humidity" Icon={Droplet}>
-              <div className="text-start px-5 pt-4 flex gap-12">
+              <div className="text-start px-5 pt-4 flex gap-12 pb-3">
                 <div className="border-l-4 rounded-sm border-gray-900 pl-4">
                   <h4 className="text-xl">Air</h4>
                   <span className="text-3xl font-black">40%</span>
-                  <span className="ml-2 block">Dry</span>
+                  <span className=" block">Dry</span>
                 </div>
                 <div className="border-l-4 rounded-sm border-gray-900 pl-4">
                   <h4 className="text-xl">Soil</h4>
                   <span className="text-3xl font-black">80%</span>
-                  <span className="ml-2 block">Very Humid</span>
+                  <span className=" block">Very Humid</span>
                 </div>
               </div>
             </PrimaryCard>
 
-            <PrimaryCard overlay title="NPK" Icon={Sprout}>
-              <div>Loading..</div>
+            <PrimaryCard
+              overlay
+              title="NPK"
+              Icon={Sprout}
+              width="min-w-[calc(calc(100vw/2.2))]"
+            >
+              <div>
+                <div className="text-start px-5 pt-4 flex gap-8">
+                  <div className="border-l-4 rounded-sm border-gray-900 pl-4">
+                    <h4 className="text-lg">Nitrogen</h4>
+                    <span className="text-3xl font-black">
+                      0 <span className="text-lg">mg/kg</span>
+                    </span>
+                  </div>
+                  <div className="border-l-4 rounded-sm border-gray-900 pl-4">
+                    <h4 className="text-lg">Phosphorus</h4>
+                    <span className="text-3xl font-black">
+                      5 <span className="text-lg">mg/kg</span>
+                    </span>
+                  </div>
+                  <div className="border-l-4 rounded-sm border-gray-900 pl-4">
+                    <h4 className="text-lg">Potassium</h4>
+                    <span className="text-3xl font-black">
+                      3 <span className="text-lg">mg/kg</span>
+                    </span>{" "}
+                  </div>
+                </div>
+              </div>
             </PrimaryCard>
 
             <PrimaryCard title="Gas Measure" Icon={CalendarCheck2}>
