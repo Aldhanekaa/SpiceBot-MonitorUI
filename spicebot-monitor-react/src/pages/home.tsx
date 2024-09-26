@@ -9,6 +9,7 @@ import {
 import "./home.css";
 import QuickButton from "../componetns/QuickButton";
 import PrimaryCard from "../componetns/PrimaryCard";
+import FloatingMenu from "../componetns/floatingMenu";
 export default function HomePage() {
   return (
     <>
@@ -27,12 +28,8 @@ export default function HomePage() {
           <div className="flex px-8 mt-[-115px] snap-x overflow-x-auto gap-6">
             <PrimaryCard title="Actions" Icon={SquareChevronRight}>
               <div>
-                <a href="kalibrasi_axis_x.html" className="button">
-                  Toggle Lights
-                </a>
-                <a href="kalibrasi_axis_y.html" className="button">
-                  Toggle Water
-                </a>
+                <div className="button">Toggle Lights</div>
+                <div className="button">Toggle Water Nozzle</div>
               </div>
             </PrimaryCard>
 
@@ -68,30 +65,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        <div
-          className="card scale-150 flex items-center justify-evenly fixed p-3 rounded-[50px] bottom-8 left-[50%] translate-x-[-50%]"
-          style={{
-            backgroundColor: "#e7e7e7",
-          }}
-        >
-          <div className="flex flex-col justify-center items-center gap-2 px-1">
-            <Leaf size={30} />
-
-            <hr className="hover-btn" />
-          </div>
-
-          <div className="flex flex-col justify-center items-center gap-2 px-1">
-            <House size={30} />
-
-            <hr className="sign-btn" />
-          </div>
-
-          <div className="flex flex-col justify-center items-center gap-2 px-1">
-            <Settings size={30} />
-
-            <hr className="hover-btn" />
-          </div>
-        </div>
+        <FloatingMenu />
       </div>
     </>
   );
