@@ -65,7 +65,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        <FloatingMenu />
+        <FloatingMenu index="home" />
       </div>
     </>
   );
