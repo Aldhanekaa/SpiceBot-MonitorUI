@@ -71,14 +71,7 @@ export default function PlantsPage() {
 
         <div className=" w-full px-8 flex flex-col mt-6">
           <h3>Plants</h3>
-          <div className="w-full max-w-full overflow-auto">
-            <div className="mt-2 max-w-none flex snap-x overflow-x-auto snap-mandatory gap-3 relative">
-              <QuickButton>Compact Analysis</QuickButton>
-              <QuickButton>Connected Devices</QuickButton>
-              <QuickButton>Camera Streaming</QuickButton>
-              <QuickButton>Sensors</QuickButton>
-            </div>
-          </div>
+          <div className="w-full max-w-full overflow-auto"></div>
         </div>
         <FloatingMenu index="plants" />
       </div>
