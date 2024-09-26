@@ -12,7 +12,7 @@ export default function PrimaryCard({
 }) {
   return (
     <div
-      className="schedules min-w-72"
+      className="schedules min-w-[calc(calc(100vw/3)-44px)]"
       style={{
         backgroundColor: "#ffab40",
         padding: "20px",
